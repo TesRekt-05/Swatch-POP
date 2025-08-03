@@ -34,11 +34,11 @@ const CinzelText = ({ children }) => (
 const ColorPallete = () => {
   return (
     <div>
-      <div className="w-full mt-70 mb-30 max-w-8xl mx-auto grid grid-cols-4 grid-rows-2 gap-0 rounded-2xl overflow-hidden bg-[#C4F2FF] shadow-lg">
+      <div className="w-full max-w-2xl md:max-w-5xl mx-auto grid grid-cols-4 grid-rows-2 gap-0 rounded-2xl overflow-hidden bg-[#C4F2FF] shadow-lg">
         {/* Top row */}
         {palettes[0].map((palette, idx) =>
           palette ? (
-            <div key={idx} className="flex flex-col h-95 w-full">
+            <div key={idx} className="flex flex-col aspect-square w-full">
               {palette.map((color, i) => (
                 <div
                   key={i}
@@ -50,16 +50,18 @@ const ColorPallete = () => {
           ) : (
             <div
               key={idx}
-              className="flex flex-col justify-center items-center h-95 w-full bg-[#C4F2FF]"
+              className="flex flex-col justify-center items-center aspect-square w-full bg-[#C4F2FF]"
             >
-              <CinzelText>{texts[0][idx]}</CinzelText>
+              <span className="font-[Cinzel] text-base xs:text-lg sm:text-xl md:text-2xl text-black text-center leading-tight whitespace-pre-line drop-shadow">
+                {texts[0][idx]}
+              </span>
             </div>
           )
         )}
         {/* Bottom row */}
         {palettes[1].map((palette, idx) =>
           palette ? (
-            <div key={idx} className="flex flex-col h-95 w-full">
+            <div key={idx} className="flex flex-col aspect-square w-full">
               {palette.map((color, i) => (
                 <div
                   key={i}
@@ -71,15 +73,17 @@ const ColorPallete = () => {
           ) : (
             <div
               key={idx}
-              className="flex flex-col justify-center items-center h-95 w-full bg-[#C4F2FF]"
+              className="flex flex-col justify-center items-center aspect-square w-full bg-[#C4F2FF]"
             >
-              <CinzelText>{texts[1][idx]}</CinzelText>
+              <span className="font-[Cinzel] text-base xs:text-lg sm:text-xl md:text-2xl text-black text-center leading-tight whitespace-pre-line drop-shadow">
+                {texts[1][idx]}
+              </span>
             </div>
           )
         )}
       </div>
       <div
-        className="w-full flex justify-center mt-50 mb-20"
+        className="w-full flex justify-center mt-5 mb-5"
         style={{
           backgroundImage: `url(${balls})`,
           backgroundRepeat: "no-repeat",

@@ -27,13 +27,13 @@ export function TypewriterEffectDemo() {
     },
   ];
   return (
-    <div className="flex flex-col  items-center justify-center h-[60rem] ">
+    <div className="flex flex-col  items-center justify-center h-[60rem] font-cormorant text-4xl md:text-6xl font-bold text-black-500 dark:text-black-500 ">
       <TypewriterEffect words={words} />
       {/*Hero image*/}
       <img
         src={hero}
         alt="hero"
-        className=" w-[600px] h-auto object-contain"
+        className=" w-[600px] h-[500px] object-contain"
       />
       <div
         className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
@@ -52,10 +52,10 @@ export function TypewriterEffectDemo() {
 
 
 const navItems = [
-  { name: "HOME", href: "/", isActive: true },
-  { name: "ABOUT US", href: "/about" },
-  { name: "PALETTES", href: "/palettes" },
-  { name: "CONTACT US", href: "/contact" },
+ { name: "HOME", href: "#", isActive: true },
+  { name: "ABOUT US", href: "#about" },
+  { name: "PALETTES", href: "#palettes" },
+  { name: "CONTACT US", href: "#footer" },
 ];
 
 
@@ -168,10 +168,19 @@ const Header = () => {
           </nav>
         </header>
         <TypewriterEffectDemo />
-        <About />
-        <Pallete />
-        <Gyaan />
+        <div id="about">
+          <About />
+        </div>
+        <div id="palettes">
+          <Pallete />
+        </div>
+        <div id="gyaan">
+          <Gyaan />
+        </div>
+        <div id="footer">
         <Footer />
+        </div>
+
       </div>
     </div>
   );

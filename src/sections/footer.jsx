@@ -1,26 +1,45 @@
-import React from 'react'
+import React from "react";
 
-const footer = () => {
+const Footer = () => {
   return (
-    <div>
-        <h1 className='text-3xl font-bold text-center my-8'>
-            Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        </h1>
-        <div className=" text-2xl flex ml-50 justify-left grid space-x-4 mb-8 mt-50">
-            <h1 className='text-4xl mb-2.5 '>SOCIALS</h1>
-            <a href="#" className="text-blue-500 hover:underline">Facebook</a>
-            <a href="#" className="text-blue-500 hover:underline">Twitter</a>
-            <a href="#" className="text-blue-500 hover:underline">Instagram</a>
-            <a href="#" className="text-blue-500 hover:underline">LinkedIn</a>
+    <>
+      <footer className="bg-white py-14 flex justify-center items-center w-full">
+        <div className="w-full max-w-3xl mx-auto flex flex-col md:flex-row justify-center items-start gap-16 md:gap-28">
+          {/* Column 1 */}
+          <div className="flex flex-col items-center md:items-start w-full">
+            <h2 className="text-[1.6rem] md:text-2xl font-serif font-semibold tracking-widest text-black mb-6 uppercase text-center md:text-left">
+              LOREM IPSUM
+            </h2>
+            <ul className="text-gray-400 text-base font-light space-y-2">
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+            </ul>
+          </div>
+          <div className="flex flex-col items-center md:items-start w-full">
+            <h2 className="text-[1.6rem] md:text-2xl font-serif font-semibold tracking-widest text-black mb-6 uppercase text-center md:text-left">
+              LOREM IPSUM
+            </h2>
+            <ul className="text-gray-400 text-base font-light space-y-2">
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+              <li>lorem ipsum</li>
+            </ul>
+          </div>
         </div>
+      </footer>
+      <footer className="bg-gray-800 text-white py-4 w-full">
+        <div className="container mx-auto text-center">
+          <p>&copy; 2023 SwatchPoP. All rights reserved.</p>
+        </div>
+      </footer>
+    </>
+  );
+};
 
-        <footer className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto text-center">
-                <p>&copy; 2023 SwatchPoP. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
-  )
-}
+export default Footer;
 
-export default footer
