@@ -1,6 +1,7 @@
 import React from "react";
 import balls from "../assets/images/balls.png"
 
+
 // Each palette is an array of 4 colors
 const palettes = [
   // Top row

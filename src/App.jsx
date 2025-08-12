@@ -5,7 +5,7 @@ import wavenav from "./assets/images/wavenav.png"
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-white">
+    <div className="relative min-h-screen bg-transparent">
       {/* Wave image at the top */}
       <img
         src={wavenav}
