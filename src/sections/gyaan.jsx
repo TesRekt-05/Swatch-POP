@@ -3,7 +3,7 @@ import moreBalls from "../assets/images/moreBalls.png"
 import bra from "../assets/images/bra.png"
 import clothes from "../assets/images/clothes.jpeg"
 import books from "../assets/images/books.jpg"
-import home from "../assets/images/home.jpg"
+import home from "../assets/images/BILLI.png"
 import stationary from "../assets/images/stationary.jpg"
 
 const categories = [
