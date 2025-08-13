@@ -22,12 +22,12 @@ const palettes = [
 
 // Texts for the text squares
 const texts = [
-  ["", "Palettes\nthat are", "", "passing\nthe"],
+  ["", "PALETTES\nTHAT ARE", "", "PASSING\n THE"],
   ["VIBE", "", "CHECK!", ""],
 ];
 
 const CinzelText = ({ children }) => (
-  <span className="font-[Cinzel] text-2xl text-black text-center leading-tight whitespace-pre-line drop-shadow">
+  <span className="font-extrabold  tracking-wider font-serif uppercase text-2xl text-black text-center leading-tight whitespace-pre-line drop-shadow">
     {children}
   </span>
 );
